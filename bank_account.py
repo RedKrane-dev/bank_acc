@@ -13,7 +13,7 @@ class BankAccount:
                 return f'Баланс пополнен на {value}'
             else:
                 return 'Депозит должен быть больше "0"'
-        except ValueError:
+        except TypeError:
             return 'Ошибка. Не подходящий тип данных'
 
 
@@ -27,7 +27,7 @@ class BankAccount:
                 return f'Выданы средства на сумму: {value}'
             else:
                 return 'Недостаточно средств. Попробуйте изменить сумму'
-        except ValueError:
+        except TypeError:
             return 'Ошибка. Не подходящий тип данных'
 
 
